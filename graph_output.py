@@ -3,13 +3,14 @@ from datetime import datetime
 import matplotlib.pyplot as plt
 
 # Open the CSV file and read its contents
-with open('./TWEETS.csv', newline='') as csvfile:
+with open('C:/Users/vecer/Downloads/output.csv', newline='', encoding="iso-8859-1") as csvfile:
     reader = csv.reader(csvfile)
     header = next(reader) # Skip the header row
     rows = []
     for row in reader:
         # Convert the date string to a datetime object
-        date = datetime.strptime(row[0], '%Y-%m-%d %H:%M:%S%z')
+        #date = datetime.strptime(row[0], '%Y-%m-%d %H:%M:%S+%z')
+        date = row[0]
         # Convert the mood score string to a float
         score = float(row[3])
         # Append the row as a tuple
