@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Read the CSV file into a DataFrame
-df = pd.read_csv('tweets final done.csv')
+df = pd.read_csv('./soubory_data/tweets final.csv')
 
 # Convert the date column to a datetime object
 df['date'] = pd.to_datetime(df['date'])
