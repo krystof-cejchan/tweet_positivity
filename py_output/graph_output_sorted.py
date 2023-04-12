@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load data from CSV file
-df = pd.read_csv("./soubory_data/tweets final.csv", parse_dates=["date"])
+df = pd.read_csv("../csv input data/tweets final.csv", parse_dates=["date"])
 
 # Split data into positive and negative
 df_pos = df[df["mood"] == "POSITIVE"]

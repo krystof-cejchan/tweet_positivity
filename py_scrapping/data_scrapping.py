@@ -39,4 +39,3 @@ with open("tweets31MAY2020.csv", "w", newline="", encoding="utf-8") as file:
         analysis = text_analysis(tweet.rawContent)
         score = ("{:.2f}".format(analysis.score))
         writer.writerow([tweet.date, analysis.mood, score])
-print('done!!!!!!!!!!!!!!!!!!!')
