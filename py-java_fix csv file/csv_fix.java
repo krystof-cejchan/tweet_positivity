@@ -17,8 +17,6 @@ public class csv_fix {
         } catch (Exception e) {
             e.printStackTrace();
         }
-      //  String regex = "(\\+00:00,).*?(POSITIVE|NEGATIVE|NEUTRAL)";
-       // String output = fileContent.replaceAll(regex, "$2");
         String regex = "\\+00:00,[\\s\\S]*?(POSITIVE|NEGATIVE|NEUTRAL)";
         String output = fileContent.replaceAll(regex, ",$1");
         
@@ -33,9 +31,5 @@ public class csv_fix {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-     
-        
-    
-
     }
 }

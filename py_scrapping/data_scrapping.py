@@ -1,7 +1,5 @@
 import csv
-
 import snscrape.modules.twitter as sntwitter
-
 from transformers import pipeline
 
 
@@ -23,11 +21,6 @@ def text_analysis(text_for_analysis):
 
 # Configure the search parameters
 query = "#BlackLivesMatter since:2020-05-30 until:2020-05-30"
-
-# Search for tweets with the hashtag
-# tweets = []
-# for i, tweet in enumerate(sntwitter.TwitterSearchScraper(query).get_items()):
-#     tweets.append([tweet.date, tweet.rawContent])
 
 # Save the tweets to a CSV file
 with open("tweets31MAY2020.csv", "w", newline="", encoding="utf-8") as file:
